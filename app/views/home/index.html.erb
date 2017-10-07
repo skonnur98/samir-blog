@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+   <head> 
+     <title> Sam's blog</title>
+     <% stylesheet_link_tag " home", media: "all"%>
+   </head>
+  <header>
+      <nav class="navigationbar">
+          <ul class="navigation-items">
+              
+              <li class="nav-list-item"><a href="#about" class="btn btn-info navbar-btn">About</a></li>
+              <li class="nav-list-item"><a href="#contact" class="btn btn-info navbar-btn">Contact</a></li>
+              <li class="nav-list-item"><%= link_to 'Blog', posts_path, class: "btn btn-info navbar-btn" %></li>
+          </ul>
+          
+      </nav>
+  </header>
+     <div class="background-image">
+         
+      <body id='homeBody'>
+          <div class ="first_section">
+          <%= link_to 'Blog', posts_path, class: "btn btn-info navbar-brn" %>
+           <h1 style="color:blue;"> Hi , I'am Sam  
+           </h1>
+           <h2>  Welcome to my blog 
+           </h2>
+          </div>
+     
+        <footer>
+        <div class=“copyright”>
+        <p>Copyright (c) 2017 Copyright Samir Konnur All Rights Reserved.</p>
+        </div>
+        </footer>
+    </body>
+  
+  </div>
+
+</html>
